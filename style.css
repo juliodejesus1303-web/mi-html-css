@@ -1,0 +1,149 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ecf0f1;
+    /* Light gray background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card Container styling using the semantic tags */
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 450px;
+    /* Card width */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for all */
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+header img:hover {
+    transform: rotate(5deg) scale(1.05);
+    border-color: #fff;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Main content styles */
+main {
+    padding: 20px 30px;
+    /* No border radius, it's the middle */
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* List styles */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background-color: #f4f6f7;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: translateX(5px);
+    background-color: #e8ecef;
+}
+
+/* Article styles */
+article {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+article h4 {
+    color: #e67e22;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+article p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #34495e;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 2px 0;
+}
